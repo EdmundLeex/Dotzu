@@ -36,7 +36,7 @@ class LogNetworkTableViewCell: UITableViewCell, LogCellProtocol {
             attstr.addAttribute(NSAttributedString.Key.foregroundColor, value: Color.mainGreen, range: range)
             attstr.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 12), range: range)
         }
-        let range = NSMakeRange(formatDate.characters.count, request.method.count + 2)
+        let range = NSMakeRange(formatDate.count, request.method.count + 2)
         attstr.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.lightGray, range: range)
         attstr.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 17), range: range)
         textViewContent.attributedText = attstr
